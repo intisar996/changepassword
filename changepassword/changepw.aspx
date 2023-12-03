@@ -19,8 +19,16 @@
  
           
              <div class="container d-flex justify-content-center align-items-center mt-5">
-    <div class="row">
+         <div class="row">
          <div class="changePassword  d-flex flex-column p-5 ">
+         <div class="changeText col-12 mb-1">
+         <label for="txtuname">User Name:</label>
+         <asp:TextBox  class="form-control"  id="txtuname"  runat="server" ></asp:TextBox>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtuname" ErrorMessage="يرجى إدخال أسم المستخدم" ForeColor="Red"
+          SetFocusOnError="true"></asp:RequiredFieldValidator>
+          </div>
+        
+          </div>
                <div class="changeText col-12 mb-1">
                 <label for="txtcurrentpass">Current Password:</label>
                 <asp:TextBox TextMode="Password" class="form-control"  id="txtcurrentpass"  runat="server" ></asp:TextBox>
